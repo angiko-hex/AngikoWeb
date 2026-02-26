@@ -1,0 +1,30 @@
+<div id="game" class="" data-world>
+  <!-- Score (egy elem elég) -->
+  <div class="score">0</div>
+
+  <!-- Start overlay -->
+  <button class="btn start-screen">Nyomj le bármilyen gombot a kezdéshez</button>
+
+  <!-- Ground kép egyszerűen a játéktéren belül; .ground-ot CSS-ben absolute-al helyezd le -->
+  
+
+  <!-- Fő karakter (pozicionálva abszolút a CSS/JS által) -->
+
+<img id="character" alt="character">
+
+ 
+  <img src="game_img/ground.png" alt="ground" class="ground">
+ 
+
+  <!-- Game overlays: game over és instrukciók a #game-en belül -->
+  <div id="gameOver" style="display:none;">
+    <h1>GAME OVER!</h1>
+    <p>You crashed!</p>
+    <div class="final-score">Score: <span id="finalScore">0</span></div>
+    <p>Distance: <span id="finalDistance">0</span>m</p>
+    <button id="restartBtn" class="btn btn-dark">Play Again</button>
+  </div>
+
+  
+</div>
+<div id="instructions" class="pt-3 ms-5 ps-5">SPACE or UP ARROW to jump | Hold to jump higher</div>

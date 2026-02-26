@@ -1,0 +1,23 @@
+body.dark {
+  background: #121212;
+  color: #eaeaea;
+}
+
+body.dark .navbar {
+  background: #1e1e1e;
+}
+
+body.dark a {
+  color: #f1f1f1;
+}
+
+body.dark .card,
+body.dark .modal-content {
+  background: #1f1f1f;
+  color: #eaeaea;
+}
+
+body.dark button {
+  background: #4bcf1f;
+  color: white;
+}

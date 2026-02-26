@@ -1,0 +1,597 @@
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body { background-color: #F9FAFB ;
+  padding-top: 100px;
+  font-family: 'barlow';
+  overflow-x: hidden;
+ 
+ 
+  
+}
+.card {
+  max-width: 100%;
+}
+
+
+/* kavepalinka.html page*/
+
+#herokep {
+    max-width:700px;
+    align-self: start;
+    margin-left: 30px;
+    z-index: 1;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+#main { 
+    z-index: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 40%;
+    float: left;
+    
+}
+
+#maidatum { 
+    z-index: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 40%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+#main p { 
+    margin: 10px;
+    margin-bottom: 20px;
+}
+a { text-decoration: none;}
+
+/* Rólam page*/
+
+.hidden, .hidden1, .hidden2, .hidden3 { 
+  display: none;
+} 
+#profilkep {
+   max-width:500px;
+   float:left; 
+   border-radius: 50%;
+   box-shadow: 0 0 15px #c7ddf4;
+   margin-left: 30px;
+}
+
+.bemutatkozas { 
+  float:left;
+  border-left: 1px solid;
+  padding: 2px 10px;
+}
+
+
+.inspiration {
+ 
+  margin-bottom: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #000;
+}
+
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 
+
+/* portfolio */
+#darklayer
+{
+  display:none;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+#diavetites  { 
+  max-width: 640px;
+  max-height: 360px;
+  margin: auto;
+  z-index: 3;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: none;
+}
+.diakep { 
+  max-width: 100%;
+  max-height: 100%;
+}
+#btnZar { 
+  position: absolute;
+  top:0;
+  right: 0;
+  z-index: 4;
+  background: none;
+  border: 0;
+  color: #c7ddf4;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#carouselWrapper {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselTitle {
+  color: white;
+}
+.bi-arrow-left-circle-fill, .bi-arrow-right-circle-fill { font-size: 2rem; color: #000; opacity: 0.8;}
+
+
+/* kapcsolat*/
+
+.kapcsolat-section {
+  max-width: 600px;
+  font-family: "Barlow", sans-serif;
+}
+
+.kapcsolat-form input,
+.kapcsolat-form textarea,
+.kapcsolat-form select {
+  border-radius: 0;
+}
+
+.osszegzes {
+  background: #f3f3f3;
+  border-left: 4px solid #000;
+}
+
+#formMessage {
+  font-weight: 500;
+}
+
+/*portfolio*/
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.gallery {
+  
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.gallery-item {
+
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+.diploma-img {max-width: 300px;}
+.gallery img {
+  max-width: 300px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+
+/*fonts*/
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*navbar*/
+.sajat-navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.menu-elvalaszto {
+  align-items: center;
+}
+
+.menu-elvalaszto .nav-link {
+  color: #f5f5f5;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0 15px;
+}
+
+.menu-elvalaszto .nav-link:hover, .navbar-brand:hover {
+  color: #f174ff;
+  
+  
+  
+  
+}
+
+.btn:hover, .start-screen:hover {
+    background:rgb(215, 56, 240); 
+    color: aliceblue;
+    border: none;
+    box-shadow: 1px 1px 10px 3px rgb(215, 56, 240);
+    transition: 0.3s;
+}
+.btn { 
+  border: none;
+}
+
+.elvalaszto {
+  color: #666;
+  padding: 0 10px;
+  user-select: none;
+}
+
+footer p, footer a, footer a:visited { 
+  color: rgb(203, 211, 219);
+  font-size: 0.8rem;
+}
+
+/* reszponzivitás*/ 
+
+
+@media screen and (max-width: 699px) {
+  #herokep {
+    display: block;
+    width: 100%;
+  }
+    #main {
+    display: block;
+    width: 100%;
+  }
+    #maidatum {
+    display: block;
+    width: 100%;
+    text-align:center;
+    
+  }
+  #profilkep {
+    display: flex;
+    width: 100%;
+    justify-content: center; margin: auto; margin-bottom: 20px;
+  }
+} 
+
+/*darkmode*/
+body.dark {
+  background: #1a1a1b; opacity: 0.8;
+  color: #eaeaea;
+}
+
+body.dark .navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  backdrop-filter: blur(6px);
+}
+
+body.dark a {
+  color: #f1f1f1;
+}
+
+body.dark .card,
+body.dark .modal-content {
+  background: #1f1f1f;
+  color: #eaeaea;
+}
+
+body.dark button {
+  background: #4bcf1f;
+  color: rgb(32, 33, 34);
+}
+body.dark button:hover {
+  color: #121212;
+    border: none;
+    box-shadow: 1px 1px 10px 3px  #4bcf1f;
+  background: #4bcf1f;
+  transition: 0.3s;
+  }
+  body.dark .carousel-control-next, body.dark .carousel-control-prev, body.dark .carousel-control-next:hover, body.dark .carousel-control-prev:hover{ background: none; box-shadow:none}
+  body.dark .inspiration { 
+ 
+  margin-bottom: 40px;
+  padding-left: 20px;
+  border-left: 3px solid  rgb(203, 211, 219);
+}
+body.dark .menu-elvalaszto .nav-link:hover, body.dark .navbar-brand:hover {
+  color: #4bcf1f; text-shadow:  5px 5px 12px  #4bcf1f; transition: 0.3s;}
+body.dark #herokep{ background-color: #f1f1f1; padding-right: 10px; border-radius: 15px; margin-bottom: 20px;}
+
+/* game.css */
+
+ #game, #gameContainer {
+ 
+  position: relative;
+  overflow: hidden;
+  height: 360px; 
+  background: linear-gradient(#eb8787, #f3f3f3); /* fallback background */
+}
+#game {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ground { position: absolute; top:150px;width: 100%; object-fit: contain;}
+
+/* the runner character */
+#character.runner-character {
+  bottom:auto; /* adjust to match your ground level */
+  position: absolute;
+  top:295px;
+  left: 60px;
+  width: 64px;
+  height: 64px;
+  user-select: none;
+  transform-origin: bottom left;
+  transition: width 0.08s ease, height 0.08s ease;
+  z-index: 20;
+}
+
+
+  #character {
+  position: absolute;
+  left: 60px;
+top:295px;
+  width: 64px;
+  height: 64px;
+  z-index: 20;
+  user-select: none;
+}
+
+
+/* crouch reduces visual height and collision box */
+#character.crouch {
+  width: 84px; /* wider image if you have a crouch image */
+  height: 44px;
+  transform-origin: bottom left;
+  /* you may also want to adjust top in JS or CSS when crouching */
+}
+
+/* obstacle style */
+.obstacle {
+  position: absolute;
+  bottom: 0px;
+  right: -120px;
+  width: 48px;
+  height: 60px;
+  background-repeat: no-repeat;
+  z-index: 15;
+  pointer-events: none;
+}
+
+/* start screen overlay (already in your HTML) */
+.start-screen {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+.ground {
+  position: absolute;
+  left:-5px;
+}
+
+
+/* gameOver */
+#gameOver {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: center;
+  display: none;
+  pointer-events: auto;
+}
+
+
+/* tuning for mobile */
+@media (max-width: 600px) {
+.elvalaszto{ display: none;}
+  .bemutatkozas, .inspiration { border: none;  justify-content: center;  max-width: 500px;}
+  .inspiration { margin-right: 0}
+ h3,h2, h4, h5, p { font-size:95%}
+ 
+ [data-world] { height: 220px; }
+ #game, #gameContainer { height: 220px;}
+ #character, #character.runner-character { width: 48px; height: 48px; left: 36px; }
+#gameOver {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 10%;
+  text-align: center;
+  display: none;
+  pointer-events: auto;
+}
+.start-screen {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  font-size: 0.8rem;
+}
+#instructions{ font-size: 0.6rem;}
+
+  #herokep { width:80%; align-self: center; margin: auto;}
+  .inspiration img, .card { max-width:300px; justify-content: center;  margin: auto;
+   
+   display: flex;}
+  .bemutatkozas div { width: 300px; align-self: center;  }
+
+  
+  footer { width: 100%; clear: both;}
+  .toggleBtn1, .toggleBtn2, .toggleBtn3{ 
+   margin: auto;
+   align-self: center;
+   display: flex;
+  }
+
+
+}
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 1;
+  }
+}
