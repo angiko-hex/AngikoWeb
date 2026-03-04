@@ -473,7 +473,7 @@ body.dark #herokep{ background-color: #f1f1f1; padding-right: 10px; border-radiu
 
 /* the runner character */
 #character.runner-character {
-  bottom:auto; /* adjust to match your ground level */
+  bottom:auto; 
   position: absolute;
   top:295px;
   left: 60px;
@@ -497,12 +497,12 @@ top:295px;
 }
 
 
-/* crouch reduces visual height and collision box */
+
 #character.crouch {
-  width: 84px; /* wider image if you have a crouch image */
+  width: 84px; 
   height: 44px;
   transform-origin: bottom left;
-  /* you may also want to adjust top in JS or CSS when crouching */
+  
 }
 
 /* obstacle style */
@@ -517,7 +517,7 @@ top:295px;
   pointer-events: none;
 }
 
-/* start screen overlay (already in your HTML) */
+
 .start-screen {
   position: absolute;
   left: 50%;

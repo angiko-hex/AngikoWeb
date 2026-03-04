@@ -77,26 +77,26 @@ $carouselInner.append(`
   });
   
   function filterGallery() {
-    const activeCat =$(".filter-btn.active").data("cat") //amire kattolsz az lesz active aktivkategória, szöveget gépeled, ketgória kattintva érhetőel
+    const activeCat =$(".filter-btn.active").data("cat") 
     
     $(".gallery-item").each(function(){
-        const itemCat=$(this).data("cat"); // elem kategóriája 
+        const itemCat=$(this).data("cat"); 
         
     
-        //Feltétel: (Összes vagy egyező kategória) ÉS (név tartalmazza a keresést) - ez a logikája
+        
         const matchCat = (activeCat === "all" || activeCat === itemCat);
      
 $(this).toggle(matchCat);
      
-        // elemen végigmegy, név kategória lekérése, a nevében benne van e a begépelt szó, kategóriát néztük, ha igaz maradhat, ha nem akkor eltünteti 
+       
 
     });
 }
 //Gombra kattintás
 $(".filter-btn").click(function(){
-    $(".filter-btn").removeClass("active"); //összestől elvesszük
-    $(this).addClass("active"); //vissza adja amire katt
-filterGallery(); // szűrő újra
+    $(".filter-btn").removeClass("active"); 
+    $(this).addClass("active"); 
+filterGallery(); 
 });
 
 
