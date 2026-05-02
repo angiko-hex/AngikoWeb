@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Familiáris-sokk</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    body { padding-top: 100px; }
+    nav { font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top sajat-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">_Angiko_</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="menu">
+        <ul class="navbar-nav menu-elvalaszto">
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.rolam">Rólam</a></li>
+          <li class="elvalaszto">|</li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfólió</a></li>
+          <li class="elvalaszto">|</li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.kapcsolat">Kapcsolat</a></li>
+          <li class="elvalaszto">|</li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html#diploma" data-i18n="nav.diploma">Diplomamunka</a></li>
+          <li class="elvalaszto">|</li>
+          <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav.game">Familiáris-sokk</a></li>
+          <li class="elvalaszto">|</li>
+          <li class="nav-item"><button id="darkToggle" class="btn btn-sm" data-i18n="nav.darkmode">🌙 Dark mode</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="game" data-world>
+    <div class="score">0</div>
+    <button class="btn start-screen" data-i18n="game.startBtn">Nyomj le bármilyen gombot a kezdéshez</button>
+    <img id="character" alt="character">
+    <img src="game_img/ground.png" alt="ground" class="ground">
+    <div id="gameOver" style="display:none;">
+      <h1 data-i18n="game.gameOver">JÁTÉK VÉGE!</h1>
+      <p data-i18n="game.crashed">Nekimentél valaminek!</p>
+      <div class="final-score"><span data-i18n="game.scoreLabel">Pontszám:</span> <span id="finalScore">0</span></div>
+      <p><span data-i18n="game.distLabel">Távolság:</span> <span id="finalDistance">0</span>m</p>
+      <button id="restartBtn" class="btn btn-dark" data-i18n="game.restart">Újra</button>
+    </div>
+  </div>
+
+  <div id="instructions" class="pt-3 ms-5 ps-5" data-i18n="game.instrText">SZÓKÖZ vagy FEL nyíl = ugrás | Tartsd nyomva a magasabb ugráshoz</div>
+
+  <script src="js/familiar.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/lang.js"></script>
+</body>
+</html>

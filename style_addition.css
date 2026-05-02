@@ -1,0 +1,27 @@
+
+/* ── Nyelvváltó gombok ───────────────────────────────────── */
+.lang-btn {
+  color: #ccc;
+  border: 1px solid #555;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  padding: 2px 6px !important;
+  transition: 0.2s;
+}
+.lang-btn:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  box-shadow: none;
+}
+.lang-btn--active {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #fff;
+  font-weight: 700;
+  box-shadow: none !important;
+}
+body.dark .lang-btn--active {
+  background: #4bcf1f !important;
+  color: #000 !important;
+  border-color: #4bcf1f;
+}

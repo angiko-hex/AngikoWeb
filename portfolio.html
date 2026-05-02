@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angiko - portfólió</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/portfolio.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top sajat-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">_Angiko_</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav menu-elvalaszto">
+            <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.rolam">Rólam</a></li>
+            <li class="elvalaszto">|</li>
+            <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav.portfolio">Portfólió</a></li>
+            <li class="elvalaszto">|</li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.kapcsolat">Kapcsolat</a></li>
+            <li class="elvalaszto">|</li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html#diploma" data-i18n="nav.diploma">Diplomamunka</a></li>
+            <li class="elvalaszto">|</li>
+            <li class="nav-item"><a class="nav-link" href="game.html" target="_blank" data-i18n="nav.game">Familiáris-sokk</a></li>
+            <li class="elvalaszto">|</li>
+            <li class="nav-item"><button id="darkToggle" class="btn btn-sm" data-i18n="nav.darkmode">🌙 Dark mode</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container portfolio-section pt-2 text-center">
+      <h2 data-i18n="portfolio.intro">Itt található valamennyi munkám a stílusom és alkotásaim átláthatósága érdekében.</h2>
+    </div>
+
+    <div class="container mt-5 justify-content-center bigbag">
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-dark filter-btn me-2" data-cat="all" data-i18n="portfolio.btnAll">Összes</button>
+        <button class="btn btn-outline-dark filter-btn me-2" data-cat="illu" data-i18n="portfolio.btnIllu">Illusztrációk</button>
+        <button class="btn btn-outline-dark filter-btn" data-cat="coll" data-i18n="portfolio.btnColl">Kollázs</button>
+      </div>
+
+      <div class="elements mt-5">
+        <div loading="lazy" class="row gallery">
+
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/portfolio.2.jpg" class="img-fluid" alt="Körbenjáró bűn I.">
+            <p class="card-text small pt-2 text-center">Körbenjáró bűn I. - micropen, 50x70cm</p>
+          </div>
+          <div class="col-md-4 gallery-item diploma col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinliebengeszervek1.1.jpg" class="img-fluid" alt="LieblingSzervem">
+            <p class="card-text small pt-2">LieblingSzervem - digitális kollázs 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item illu col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/portfolio.1.jpg" class="img-fluid" alt="Körbenjáró bűn II.">
+            <p class="card-text small pt-2">Körbenjáró bűn II. - micropen, 50x70cm</p>
+          </div>
+          <div class="col-md-4 gallery-item illu col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/méhecske4.jpg" class="img-fluid" alt="Méh királynő">
+            <p class="card-text small pt-2">Méh királynő - digitális Illusztráció, 60x85cm</p>
+          </div>
+          <div class="col-md-4 gallery-item diploma col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/legyeserdő.jpg" class="img-fluid" alt="Legyeserdő">
+            <p class="card-text small pt-2">Legyeserdő - digitális kollázs, 60x85cm</p>
+          </div>
+          <div class="col-md-4 gallery-item illu col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/Familiáris sokk.jpg" class="img-fluid" alt="Familiáris-sokk">
+            <p class="card-text small pt-2">Familiáris-sokk - digitális Illusztráció, 60x85cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/jegek.jpg" class="img-fluid" alt="Mínuszatúrák">
+            <p class="card-text small pt-2">Mínuszatúrák - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/jénagyi.jpg" class="img-fluid" alt="Koszt sorozat I.">
+            <p class="card-text small pt-2">Koszt sorozat I. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/Koszt 6.jpg" class="img-fluid" alt="Koszt sorozat VI.">
+            <p class="card-text small pt-2">Koszt sorozat VI. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/Koszt 7.jpg" class="img-fluid" alt="Koszt sorozat VII.">
+            <p class="card-text small pt-2">Koszt sorozat VII. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/Koszt 8.jpg" class="img-fluid" alt="Koszt sorozat VIII.">
+            <p class="card-text small pt-2">Koszt sorozat VIII. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/Koszt 9.jpg" class="img-fluid" alt="Koszt sorozat IX.">
+            <p class="card-text small pt-2">Koszt sorozat IX. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/bisongg.jpg" class="img-fluid" alt="Bölény a,">
+            <p class="card-text small pt-2">Bölény a, - digitális Illusztráció, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/Bort hozzon kend, mert uraim a víztől betegek lesznek_.jpg" class="img-fluid" alt="Koszt sorozat II.">
+            <p class="card-text small pt-2">Koszt sorozat II. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/lábosos.jpg" class="img-fluid" alt="Koszt sorozat III.">
+            <p class="card-text small pt-2">Koszt sorozat III. - digitális Illusztráció, 29x42cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/Flock1.jpg" class="img-fluid" alt="Flock sorozat I.">
+            <p class="card-text small pt-2">Flock sorozat I. - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/flock2.jpg" class="img-fluid" alt="Flock sorozat II.">
+            <p class="card-text small pt-2">Flock sorozat II. - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/flock3.jpg" class="img-fluid" alt="Flock sorozat III.">
+            <p class="card-text small pt-2">Flock sorozat III. - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/hangyarc.jpg" class="img-fluid" alt="Hangyarc">
+            <p class="card-text small pt-2">Hangyarc - digitális kollázs, 10x15cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/féreg.jpg" class="img-fluid" alt="Féreg">
+            <p class="card-text small pt-2">Féreg - digitális kollázs, 10x15cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/molyszem.jpg" class="img-fluid" alt="Molyszem">
+            <p class="card-text small pt-2">Molyszem - digitális kollázs, 10x15cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/legyeserdő2.jpg" class="img-fluid" alt="Legyeserdő II.">
+            <p class="card-text small pt-2">Legyeserdő II. - digitális kollázs, 60x85cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/lázálom.jpg" class="img-fluid" alt="Lázálom">
+            <p class="card-text small pt-2">Lázálom - digitális Illusztráció, 60x85cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/történet másolat.jpg" class="img-fluid" alt="Történet más oldat">
+            <p class="card-text small pt-2">Történet más oldat - digitális Illusztráció, 60x85cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/main waldvizjel.jpg" class="img-fluid" alt="MeinWald sorozat I.">
+            <p class="card-text small pt-2">MeinWald sorozat I. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/bisong.jpg" class="img-fluid" alt="Bölény b,">
+            <p class="card-text small pt-2">Bölény b, - digitális Illusztráció, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald2.jpg" class="img-fluid" alt="MeinWald sorozat IL.">
+            <p class="card-text small pt-2">MeinWald sorozat IL. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald3.jpg" class="img-fluid" alt="MeinWald sorozat III.">
+            <p class="card-text small pt-2">MeinWald sorozat III. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald4.jpg" class="img-fluid" alt="MeinWald sorozat IV.">
+            <p class="card-text small pt-2">MeinWald sorozat IV. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald5.jpg" class="img-fluid" alt="MeinWald sorozat V.">
+            <p class="card-text small pt-2">MeinWald sorozat V. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald6.jpg" class="img-fluid" alt="MeinWald sorozat VI.">
+            <p class="card-text small pt-2">MeinWald sorozat VI. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald7.jpg" class="img-fluid" alt="MeinWald sorozat VII.">
+            <p class="card-text small pt-2">MeinWald sorozat VII. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/meinwald8.jpg" class="img-fluid" alt="MeinWald sorozat VIII.">
+            <p class="card-text small pt-2">MeinWald sorozat VIII. - digitális kollázs, 21x29cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/PlanetBee.jpg" class="img-fluid" alt="B planéta">
+            <p class="card-text small pt-2">B planéta - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/telekreálás.jpg" class="img-fluid" alt="Telekreálás">
+            <p class="card-text small pt-2">Telekreálás - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="coll">
+            <img src="webportfolio/teletál.jpg" class="img-fluid" alt="Teletál">
+            <p class="card-text small pt-2">Teletál - digitális kollázs, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/terv.jpg" class="img-fluid" alt="Belső lény sorozat I.">
+            <p class="card-text small pt-2">Belső lény sorozat I. - digitális Illusztráció, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/terv2.jpg" class="img-fluid" alt="Belső lény sorozat II.">
+            <p class="card-text small pt-2">Belső lény sorozat II. - digitális Illusztráció, 29x21cm</p>
+          </div>
+          <div class="col-md-4 gallery-item col-xs-1 text-center kep" data-cat="illu">
+            <img src="webportfolio/terv3.jpg" class="img-fluid" alt="Belső lény sorozat III.">
+            <p class="card-text small pt-2">Belső lény sorozat III. - digitális Illusztráció, 29x21cm</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Diploma section -->
+    <section id="diploma" class="container position-relative pt-2 text-md-start text-sm-center">
+      <header class="me-5 ms-5">
+        <h1 class="display-4 fw-bold" data-i18n="portfolio.diplomaH1">Méhecském</h1>
+        <h3 data-i18n="portfolio.diplomaH3">Diplomamunka sorozatom, mely az egyediséget ötvözi az eretnek boszorkánysággal illetve deviáns viselkedésnek hitt női sokféleséggel</h3>
+        <p class="mb-5" data-i18n="portfolio.diplomaP">Feldolgozom, hogy sokszor a különbség, eltérés, nem feltétlenül ördögi eredetű, az hogy másképpen viselkedünk illetve eltérően nezünk ki kivűl, vagy éppenséggel belűlről, teljesen elfogadható</p>
+      </header>
+      <div loading="lazy" class="row align-items-center mb-2">
+        <div class="col-md-7 col-xs-1 text-center"><img src="img_diploma/méhecském.jpg" class="img-fluid diploma-img" alt="Méhecském sorozat I."></div>
+        <div class="col-md-5 col-xs-1 text-center">
+          <blockquote class="blockquote"><p class="mb-3">Méhecském sorozat I.</p><footer class="blockquote-footer">digitális Illusztráció, <cite>85x60cm</cite></footer></blockquote>
+        </div>
+      </div>
+      <div loading="lazy" class="row align-items-center mb-2">
+        <div class="col-md-5 col-xs-1 text-center">
+          <blockquote class="blockquote"><p class="mb-3">Méhecském sorozat II.</p><footer class="blockquote-footer">digitális Illusztráció, <cite>60x85cm</cite></footer></blockquote>
+        </div>
+        <div class="col-md-7 col-xs-1 text-center"><img src="img_diploma/Méhecske2.jpg" class="img-fluid diploma-img" alt="Méhecském sorozat II."></div>
+      </div>
+      <div loading="lazy" class="row align-items-center mb-2">
+        <div class="col-md-7 col-xs-1 text-center"><img src="img_diploma/méhecske3.jpg" class="img-fluid diploma-img" alt="Méhecském sorozat III."></div>
+        <div class="col-md-5 col-xs-1 text-center">
+          <blockquote class="blockquote"><p class="mb-3">Méhecském sorozat III.</p><footer class="blockquote-footer">digitális Illusztráció, <cite>60x85cm</cite></footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <div id="carouselWrapper" class="d-none text-center">
+      <h5 id="carouselTitle" class="mb-3"></h5>
+      <div id="portfolioCarousel" class="carousel slide" style="max-width: 430px;" data-bs-ride="false">
+        <div class="carousel-inner"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span><i class="bi bi-arrow-left-circle-fill"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span><i class="bi bi-arrow-right-circle-fill"></i></span>
+        </button>
+      </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white">
+      <div class="row d-flex justify-content-evenly pt-3">
+        <div class="col-md-3 col-xs-1 text-center"><p><i class="bi bi-telephone-fill"></i> +36 30 855 5555</p></div>
+        <div class="col-md-3 col-xs-1 text-center"><p><i class="bi bi-envelope-at-fill"></i> koszegi.angela@gmail.com</p></div>
+        <div class="col-md-3 col-xs-1 text-center"><p><i class="bi bi-github"></i> angiko-hex</p></div>
+        <div class="col-md-3 col-xs-1 text-center"><p><i class="bi bi-instagram"></i> @kave_palinka</p></div>
+      </div>
+    </footer>
+
+    <script src="js/darkmode.js"></script>
+    <script src="js/lang.js"></script>
+  </body>
+</html>
